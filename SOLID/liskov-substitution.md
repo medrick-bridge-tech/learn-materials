@@ -11,7 +11,7 @@ If class C is derived from P then C should be substitutable for P.
 Let’s consider the code below where LSP is violated.
 We cannot simply substitute a Triangle, which results in printing shape of a triangle, with Circle.
 
-''' 
+``` 
 public class Program
 {
    static void Main(string[] args)
@@ -36,10 +36,11 @@ public class Circle: Triangle
      return "Circle";
    }
 }
+```
 
 To correct above implementation, we need to refactor this code by introducing interface with method called GetShape.
 
-'''
+```
 class Program
 {
    static void Main(string[] args)
@@ -71,3 +72,4 @@ public class Circle: Triangle
      return "Circle";
    }
 }
+```
