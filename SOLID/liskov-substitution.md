@@ -1,4 +1,4 @@
-# L : Liskov Substitution Principle
+# L : Liskov Substitution Principle (LSP)
 
 Liskov Substitution Principle was introduced by Barbara Liskov in 1987.
 A derived class must be correctly substitutable for its base class.
